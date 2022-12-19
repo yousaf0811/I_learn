@@ -79,7 +79,7 @@ const TeacherSignup = () => {
 
 
     const handleClick = () => {
-        navigate('/teacherAccount')};
+        navigate('/teacherlogin')};
       const handleSubmit = () => {
         // console.log(name);
         if(!firstName ) { alert('Fill the empty input fields');  return false}; 
@@ -169,13 +169,15 @@ const TeacherSignup = () => {
                                                 <h3 class="fw-normal mb-5" style={{color: "#4835d4"}}  >General Infomation</h3>
 
                                                 <div class="mb-4 pb-2">
-                                                    <select class="select">
-                                                        <option value="1">Title</option>
-                                                        <option value="2">Quran Teacher</option>
-                                                        <option value="3">Islamic Teacher</option>
-                                                        <option value="4">Molana sb</option>
-                                                    </select>
-                                                </div>
+                                                        <select value={title} class="select" onChange={(e)=>{
+                                                            console.log(e.target.value)
+                                                            setTitle(e.target.value)
+                                                        }}   >
+                                                            <option value="Quran Teacher">Quran Teacher</option>
+                                                            <option value="Islamic Teacher">Islamic Teacher</option>
+                                                            <option value="Molana sb">Molana sb</option>
+                                                        </select>
+                                                    </div>
 
                                                 <div class="row">
                                                     <div class="col-md-6 mb-4 pb-2">

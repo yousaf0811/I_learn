@@ -10,10 +10,12 @@ import TeacherEdit from './components/teacher/TeacherEdit';
 import TeacherQuery from './components/teacher/TeacherQuery';
 import StudentAccount from './components/students/StudentAccount';
 import TeacherAccount from './components/teacher/TeacherAccount';
+import Createpost from './components/teacher/Createpost';
 import Admin from './components/admin/Admin';
 import Home from './components/Home';
 import Auth from './components/Auth';
 import Admin_home from './components/admin/admin_home';
+
 function App() {
   return (
     <div className="App">
@@ -30,8 +32,10 @@ function App() {
       <Route path="/teachersignup" element={<TeacherSignup/> } />
       <Route path="/teacherEdit" element={<TeacherEdit/> } />
       <Route path="/teacherquery" element={<TeacherQuery/> } />
+      <Route path="/Createpost" element={<Auth><Createpost/></Auth> } />
       <Route path="/teacherAccount" element={<Auth><TeacherAccount/></Auth> } />
       <Route path="/adminHome" element={<Auth><Admin_home/></Auth> } />
+    
       </Routes>
       </BrowserRouter>
     </div>
