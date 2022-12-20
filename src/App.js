@@ -14,6 +14,10 @@ import Admin from './components/admin/Admin';
 import Home from './components/Home';
 import Auth from './components/Auth';
 import Admin_home from './components/admin/admin_home';
+import About from './components/component/about';
+import Contactus from './components/component/contact';
+import Fee from './components/component/fee';
+import Courses from './components/component/courses';
 function App() {
   return (
     <div className="App">
@@ -33,6 +37,10 @@ function App() {
       <Route path="/teacherquery" element={<TeacherQuery/> } />
       <Route path="/teacherAccount" element={<Auth><TeacherAccount/></Auth> } />
       <Route path="/adminHome" element={<Auth><Admin_home/></Auth> } />
+      <Route path="/about" element={<About/> } />
+      <Route path="/contactus" element={<Contactus/> } />
+      <Route path="/fee" element={<Fee/> } />
+      <Route path="/courses" element={<Courses/> } />
       </Routes>
       </BrowserRouter>
     </div>

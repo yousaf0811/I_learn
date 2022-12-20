@@ -77,16 +77,12 @@
     border-bottom-right-radius: 15px;
     }
     }
-    /* .vh-100{
-      background-color: lightgray;
-      height: 1000px;
-    } */
     .SL{
-      height: 850px;
+      height: 856px;
       width: 100%;
-      border-radius: 10px;
-      border: darkgray solid 2px;
-      background-color: lightgray;
+      /* border-radius: 10px; */
+      border: #D1AD3C solid 5px;
+      background-color: #DDC577;
     }
     .footer{
       padding: 25px;

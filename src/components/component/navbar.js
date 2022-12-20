@@ -20,6 +20,7 @@ const Navbar = () => {
                             style={{ marginTop: "-1px", lineHeight:"120px" }}
                         />
                     </a>
+                    <h1>E-Learn Islamic Education</h1>
                     <button
                         class="navbar-toggler"
                         type="button"
@@ -39,10 +40,16 @@ const Navbar = () => {
                                     <a class="nav-link" href="/">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">About</a>
+                                    <a class="nav-link" href="/about">About</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Contact Us</a>
+                                    <a class="nav-link" href="/contactus">Contact Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="courses">Courses</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="fee">Fee Plan's</a>
                                 </li>
                             </ul>
                             <div class="d-flex align-items-center">
