@@ -18,6 +18,7 @@ import About from './components/component/about';
 import Contactus from './components/component/contact';
 import Fee from './components/component/fee';
 import Courses from './components/component/courses';
+import StudentPosts from './components/students/studentPosts';
 function App() {
   return (
     <div className="App">
@@ -29,8 +30,9 @@ function App() {
       <Route path="/studentlogin" element={<StudentLogin/> } />
       <Route path="/studentsignup" element={<StudentSignUp/> } />
       <Route path="/studentaccount/:id" element={<Auth><StudentAccount/></Auth> } />
-      <Route path="/studentEdit" element={<StudentEdit/> } />
-      <Route path="/studentquery" element={<StudentQuery/> } />
+      <Route path="/studentEdit" element={<Auth><StudentEdit/></Auth> } />
+      <Route path="/studentquery" element={<Auth><StudentQuery/></Auth> } />
+      <Route path="/studentposts" element={<Auth><StudentPosts/></Auth> } />
       <Route path="/teacherlogin" element={<TeacherLogin/> } />
       <Route path="/teachersignup" element={<TeacherSignup/> } />
       <Route path="/teacherEdit" element={<TeacherEdit/> } />

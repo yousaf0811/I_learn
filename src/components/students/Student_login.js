@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom"
 import { useState } from "react";
 import Navbar from "../component/navbar";
 import Footer from "../component/footer";
+import StudentNavbarLogin from "./studentnavlogin";
 const StudentLogin = () => {
     const [database, setDatabase] = useState([]);
     const navigate = useNavigate();
@@ -40,7 +41,7 @@ const StudentLogin = () => {
     return (
         <div>
             {/* <h1>Student_login</h1> */}
-                <Navbar/>
+                <StudentNavbarLogin/>
             <div className="SL" >
                 <section class="vh-100">
                     <div class="container py-5 h-100">
@@ -69,7 +70,7 @@ const StudentLogin = () => {
                                                         <label class="form-label" for="form2Example27">Password</label>
                                                     </div>
                                                     <div class="pt-1 mb-4">
-                                                        <button class="btn btn-outline-warning btn-lg btn-block" type="submit">Login</button>
+                                                        <button class="btn btn-warning btn-lg btn-block" type="submit">Login</button>
                                                     </div>
                                                     <a class="small text-muted" href="https://mdbootstrap.com/">Forgot password?</a>
                                                     <p class="mb-5 pb-lg-2" style={{ color: "#393f81" }}>Don't have an account? <a href="/studentsignup"

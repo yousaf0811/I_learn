@@ -160,12 +160,13 @@
       background-color: #ddc577;
     }
     .h-101{
-       border: darkgray solid 2px;
-       border-radius: 10px;
+       border: #D1AD3C solid 5px;
+       background-color: #DDC577;
+       /* border-radius: 10px; */
     }
 .home-body{
   width: 100%;
-  height: 850px;
+  height: 550px;
   color: antiquewhite;
   border: #D1AD3C solid 4px;
   background-image: url(./assets/images/body_photo.jpg);
@@ -193,3 +194,39 @@ background-color: #D1AD3C;
 .nav-link {
   color: #fff !important;
 }
+.student-account-body{
+  height: 800px;
+  width: 100%;
+  /* border: #4835d4 solid 5px; */
+  display: flex;
+  flex-direction: row;
+  background-image: url(./assets/images/student_account_profile-image.jpg);
+  background-repeat: round;
+}
+.student-dashboard{
+  height: 800px;
+  width: 20%;
+  border: #ddc577 solid 5px;
+  background-color: #D1AD3C;
+  display: flex;
+  justify-content:flex-start;
+  flex-direction: column;
+  /* margin: 10px; */
+  padding-top: 10px;
+}
+.student-account-profile{
+  height: 800px;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  /* border: red solid 3px; */
+}
+.profile-card{
+  height: 400px;
+  width: 500px;
+}
+/* .student-dashboard-buttons{
+  height: 150px;
+  width: 200px;
+  border: #4835d4 solid 3px;
+} */

@@ -1,6 +1,12 @@
-const About =()=>{
-    return(
-        <h1>About Page</h1>
+import Navbar from "./navbar"
+import Footer from "./footer";
+const About = () => {
+    return (
+        <div>
+            <Navbar/>
+            <Footer/>
+        </div>
+
     )
 }
 export default About

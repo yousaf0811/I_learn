@@ -9,8 +9,10 @@ const Home = () => {
     <div>
       <Navbar />
       <div className="home-body" >
+        <br></br><br></br>
         <h1>E-Learn Islamic Education</h1>
-        <p>“The best among you is he who learns the Quran and teaches it” (Bukhari)</p>
+        <p>“The best among you is he who learns the Quran and teaches it” (Bukhari)</p><br></br><br></br><br></br><br></br><br></br>
+        <button type="button" class="btn btn-lg btn-warning" onClick={() => { navigate('/studentlogin') }}>Login Student Account</button>
       </div>
       <div className="home-body-text" >
         <div className="home-body-text-item">
