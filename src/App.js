@@ -11,6 +11,8 @@ import TeacherQuery from './components/teacher/TeacherQuery';
 import StudentAccount from './components/students/StudentAccount';
 import TeacherAccount from './components/teacher/TeacherAccount';
 import Createpost from './components/teacher/Createpost';
+import Editpost from './components/teacher/Editpost'
+import Viewpost from './components/teacher/Viewpost'
 import Admin from './components/admin/Admin';
 import Home from './components/Home';
 import Auth from './components/Auth';
@@ -31,6 +33,8 @@ function App() {
       <Route path="/teacherlogin" element={<TeacherLogin/> } />
       <Route path="/teachersignup" element={<TeacherSignup/> } />
       <Route path="/teacherEdit" element={<TeacherEdit/> } />
+      <Route path="/Editpost" element={<Auth><Editpost/></Auth> } />
+      <Route path="/Viewpost" element={<Auth><Viewpost/></Auth> } />
       <Route path="/teacherquery" element={<TeacherQuery/> } />
       <Route path="/Createpost" element={<Auth><Createpost/></Auth> } />
       <Route path="/teacherAccount" element={<Auth><TeacherAccount/></Auth> } />

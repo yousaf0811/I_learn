@@ -19,7 +19,7 @@ const TeacherEdit = () => {
     const [skypeId, setSkypeId] = useState(null);
     const [dob, setDob] = useState(null);
     const [number, setNumber] = useState(null);
-    // const [course, setCourse] = useState(null);
+    
 
     const handleInputChange = (e) => {
         const { id, value } = e.target;
@@ -117,7 +117,7 @@ const TeacherEdit = () => {
         user.skypeId = skypeId;
         user.dob = dob;
         user.number = number;
-        
+
 
 
         localStorage.setItem('name', JSON.stringify(firstName));
@@ -132,21 +132,13 @@ const TeacherEdit = () => {
 
 
     const handleClick = () => {
-        navigate('/teacherAccount')
+        navigate('/Createpost')
     };
     return (
         <div>
+            <h3>Edit-Account</h3>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container">
-                    {/* <a class="navbar-brand me-2" href="#">
-                        <img
-                            src="https://images.unsplash.com/photo-1670602328279-82c100b3dfa8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-                            height="16"
-                            alt="MDB Logo"
-                            loading="lazy"
-                            style={{marginTop: "-1px"}}
-                        />
-                    </a> */}
                     <button
                         class="navbar-toggler"
                         type="button"
@@ -159,7 +151,7 @@ const TeacherEdit = () => {
                         <i class="fas fa-bars"></i>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarButtonsExample">
-                        {/* <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Home</a>
                             </li>
@@ -169,14 +161,10 @@ const TeacherEdit = () => {
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Contact Us</a>
                             </li>
-                        </ul> */}
-                        <div><h3>Edit-Account</h3></div>
-
-                        {/* <div class="d-flex align-items-center">
-                            <button type="button" class="btn btn-success me-3" onClick={() => { navigate('/teacherlogin') }} >
-                                Already has Account ? Click for Login
-                            </button>
-                        </div> */}
+                        </ul> 
+                        <div class="d-flex align-items-center">
+                            <button type="button" class="btn btn-danger" onClick={() => { navigate('/') }}>Log Out</button>
+                        </div>
                     </div>
                 </div>
             </nav>
@@ -193,7 +181,7 @@ const TeacherEdit = () => {
                                                     <h3 class="fw-normal mb-5" style={{ color: "#4835d4" }}  >General Infomation</h3>
 
                                                     <div class="mb-4 pb-2">
-                                                        <select value={title} class="select" onChange={(e)=>{
+                                                        <select value={title} class="select" onChange={(e) => {
                                                             console.log(e.target.value)
                                                             setTitle(e.target.value)
                                                         }}   >
@@ -236,9 +224,9 @@ const TeacherEdit = () => {
 
                                                     <div class="mb-4 pb-2">
                                                         <div class="form-outline">
-                                                            <select value={experience} class="select" onChange={(e)=>{
-                                                            console.log(e.target.value)
-                                                            setExperience(e.target.value)
+                                                            <select value={experience} class="select" onChange={(e) => {
+                                                                console.log(e.target.value)
+                                                                setExperience(e.target.value)
                                                             }}
                                                             >
                                                                 <option value="Six months">Six months</option>

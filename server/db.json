@@ -17,35 +17,6 @@
   ],
   "teachers": [
     {
-      "firstName": "Malik Sab",
-      "id": 1
-    },
-    {
-      "firstName": "qq mm",
-      "id": 2
-    },
-    {
-      "title": null,
-      "firstName": "mansoorhussain",
-      "lastName": "ali",
-      "fatherName": "qw",
-      "gender": "m",
-      "experience": null,
-      "aboutExperience": "11",
-      "details": "asas",
-      "password": "123",
-      "additionalInformation": "dsdd",
-      "country": "11",
-      "city": "bb",
-      "skypeId": null,
-      "dob": "2022-11-30",
-      "number": "dff",
-      "address": "g",
-      "email": "wasif@gmail.com",
-      "id": 3,
-      "adress": "g"
-    },
-    {
       "title": "Islamic Teacher",
       "firstName": "sajidhussain",
       "lastName": "1212",
@@ -63,7 +34,7 @@
       "number": "100",
       "address": "40",
       "email": "100@gmail.com",
-      "id": 4,
+      "id": 2,
       "adress": "5"
     }
   ],
@@ -75,28 +46,73 @@
   ],
   "post": [
     {
+      "teacherId": 2,
       "name": "wasif",
       "title": "wasiii",
-      "details": "i'm good men",
+      "body": "i'm good men",
       "id": 1
     },
     {
-      "name": "fghdfhfdghfdg",
-      "title": null,
-      "details": null,
+      "teacherId": 2,
+      "name": "jjj",
+      "title": "kkk",
+      "body": "lll",
       "id": 2
     },
     {
-      "name": "wasif",
-      "title": "fghfdhgfg",
-      "details": "wasif",
+      "teacherId": 2,
+      "name": "11",
+      "title": "22",
+      "body": "33",
       "id": 3
     },
     {
-      "name": "qq",
-      "title": "qqq",
-      "details": "qqqq",
+      "teacherId": 2,
+      "name": "wasif",
+      "title": "wasiii",
+      "body": "i'm good men",
       "id": 4
+    },
+    {
+      "teacherId": 2,
+      "name": "jjj",
+      "title": "kkk",
+      "body": "lll",
+      "id": 5
+    },
+    {
+      "teacherId": 2,
+      "name": "11",
+      "title": "22",
+      "body": "33",
+      "id": 6
+    },
+    {
+      "teacherId": 2,
+      "name": "wasif",
+      "title": "wasiii",
+      "body": "i'm good men",
+      "id": 7
+    },
+    {
+      "teacherId": 4,
+      "name": "jjj",
+      "title": "kkk",
+      "body": "Wasif",
+      "id": 8
+    },
+    {
+      "teacherId": 4,
+      "name": "11",
+      "title": "22",
+      "body": "333",
+      "id": 9
+    },
+    {
+      "name": null,
+      "title": null,
+      "details": null,
+      "id": 10
     }
   ]
 }
