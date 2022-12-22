@@ -20,7 +20,7 @@ const Viewpost = () => {
                 let teacherID = JSON.parse(localData);
                 console.log(teacherID, ":: ")
                 info.map((item) => {
-                    if (item.teacherId === teacherID) {
+                    if (item.teacherid === teacherID) {
                         tempList.push(item)
                         setUsersList(tempList)
                     }

@@ -9,7 +9,7 @@ const Post = () => {
         const npost = {
             name: name,
             title,
-            details: body,
+            body: body,
         }
         localStorage.setItem("name", JSON.stringify(name));
         fetch("http://localhost:3010/post", {

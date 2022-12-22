@@ -96,6 +96,26 @@
       "address": "8",
       "email": "wasif@gmail.com",
       "id": 5
+    },
+    {
+      "title": "Molana sb",
+      "firstName": "01",
+      "lastName": "02",
+      "fatherName": "03",
+      "gender": "04",
+      "experience": "One Year",
+      "aboutExperience": "05",
+      "details": "06",
+      "password": "07",
+      "additionalInformation": "09",
+      "country": "010",
+      "city": "011",
+      "skypeId": "012",
+      "dob": "2022-12-01",
+      "number": "013",
+      "address": "08",
+      "email": "014@gmail.com",
+      "id": 6
     }
   ],
   "admin": [
@@ -120,119 +140,102 @@
       "id": 2
     },
     {
-      "teacherId": 2,
+      "teacherId": 4,
       "name": "11",
       "title": "22",
       "body": "33",
       "id": 3
     },
     {
-      "teacherId": 2,
+      "teacherId": 4,
       "name": "wasif",
       "title": "wasiii",
       "body": "i'm good men",
       "id": 4
     },
     {
-      "teacherId": 2,
+      "teacherId": 4,
       "name": "jjj",
       "title": "kkk",
       "body": "lll",
       "id": 5
     },
     {
-      "teacherId": 2,
+      "teacherId": 5,
       "name": "11",
       "title": "22",
       "body": "33",
       "id": 6
     },
     {
-      "teacherId": 2,
+      "teacherId": 5,
       "name": "wasif",
       "title": "wasiii",
       "body": "i'm good men",
       "id": 7
     },
     {
-      "teacherId": 4,
+      "teacherId": 5,
       "name": "jjj",
       "title": "kkk",
       "body": "Wasif",
       "id": 8
     },
     {
-      "teacherId": 4,
+      "teacherId": 5,
       "name": "11",
       "title": "22",
       "body": "333",
       "id": 9
     },
     {
-      "name": null,
-      "title": null,
-      "details": null,
+      "teacherId": 5,
+      "name": "creative solutions",
+      "title": "creative",
+      "body": " solutions",
       "id": 10
     },
     {
-      "name": null,
-      "title": null,
-      "details": null,
+      "teacherId": 5,
+      "name": "wasif",
+      "title": "asif",
+      "body": "wasif",
       "id": 11
     },
     {
-      "name": null,
-      "title": null,
-      "details": null,
+      "teacherId": 5,
+      "name": "1",
+      "title": "11",
+      "body": "111",
       "id": 12
     },
     {
-      "name": null,
-      "title": null,
-      "details": null,
+      "teacherId": 5,
+      "name": "1",
+      "title": "11",
+      "body": "111",
       "id": 13
     },
     {
-      "name": "creative solutions",
+      "name": "wasif",
       "title": "creative ",
-      "details": "solutions",
+      "body": "1",
       "id": 14
     },
     {
-      "name": null,
-      "title": null,
-      "details": null,
+      "teacherId": 6,
+      "name": "00",
+      "title": "11",
+      "body": "22",
       "id": 15
     },
     {
-      "name": null,
-      "title": null,
-      "details": null,
+      
+      "teacherId": 6,
+      "name": "..",
+      "title": "....",
+      "body": "......",
       "id": 16
-    },
-    {
-      "name": null,
-      "title": null,
-      "details": null,
-      "id": 17
-    },
-    {
-      "name": null,
-      "title": null,
-      "details": null,
-      "id": 18
-    },
-    {
-      "name": null,
-      "title": null,
-      "details": null,
-      "id": 19
-    },
-    {
-      "name": null,
-      "title": null,
-      "details": null,
-      "id": 20
     }
   ]
 }
