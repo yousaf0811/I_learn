@@ -1,6 +1,20 @@
+import { useNavigate } from "react-router-dom"
+import Navbar from "./navbar";
+import Footer from "./footer";
+
+
 const Fee =()=>{
+    const navigate = useNavigate();
     return(
-        <h1>Fee Page</h1>
+        <div>
+            <Navbar/>
+            <div className="fee-body" >
+                <div className="fee-body-method">
+                    
+                </div>
+            </div>
+            <Footer/>
+        </div>
     )
 }
 export default Fee
