@@ -82,7 +82,23 @@ const TeacherSignup = () => {
     };
     const handleSubmit = () => {
         // console.log(name);
-        if (!firstName) { alert('Fill the empty input fields'); return false };
+        if (!title) { alert('Fill the Title input fields'); return false };
+        if (!firstName) { alert('Fill the firstName input fields'); return false };
+        if (!lastName) { alert('Fill the lastName input fields'); return false };
+        if (!fatherName) { alert('Fill the fatherName input fields'); return false };
+        if (!gender) { alert('Fill the Gender input fields'); return false };
+        if (!experience) { alert('Fill the Rxperience input fields'); return false };
+        if (!aboutExperience) { alert('Fill the AboutExperience input fields'); return false };
+        if (!details) { alert('Fill the Details input fields'); return false };
+        if (!password) { alert('Fill the Password fields'); return false };
+        if (!address) { alert('Fill the Address fields'); return false };
+        if (!additionalInformation) { alert('Fill the AdditionalInformation fields'); return false };
+        if (!country) { alert('Fill the Country fields'); return false };
+        if (!city) { alert('Fill the City fields'); return false };
+        if (!skypeId) { alert('Fill the SkypeID fields'); return false };
+        if (!dob) { alert('Fill the DOB fields'); return false };
+        if (!number) { alert('Fill the PhoneNumber fields'); return false };
+        if (!email) { alert('Fill the Email fields'); return false };
         const user = {
             title,
             firstName,
@@ -93,13 +109,13 @@ const TeacherSignup = () => {
             aboutExperience,
             details,
             password,
+            address,
             additionalInformation,
             country,
             city,
             skypeId,
             dob,
             number,
-            address,
             email,
         }
         localStorage.setItem('name', JSON.stringify(user.name));

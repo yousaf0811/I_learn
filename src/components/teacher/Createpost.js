@@ -6,10 +6,14 @@ const Post = () => {
     const [body, setBody] = useState(null);
     const navigate = useNavigate();
     const handleSubmit = () => {
+        let localData = localStorage.getItem("id");
+                let teacherID = JSON.parse(localData);
         const npost = {
             name: name,
             title,
             body: body,
+            teacherId:teacherID
+
         }
         localStorage.setItem("name", JSON.stringify(name));
         fetch("http://localhost:3010/post", {

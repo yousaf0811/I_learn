@@ -32,7 +32,7 @@ function App() {
           <Route path="/studentEdit" element={<StudentEdit />} />
           <Route path="/studentquery" element={<StudentQuery />} />
           <Route path="/teacherlogin" element={<TeacherLogin />} />
-          <Route path="/teachersignup" element={<Auth><TeacherSignup /></Auth>} />
+          <Route path="/teachersignup" element={<TeacherSignup />} />
           <Route path="/teacherEdit" element={<Auth><TeacherEdit /></Auth>} />
           <Route path="/Editpost" element={<Auth><Editpost /></Auth>} />
           <Route path="/Viewpost" element={<Auth><Viewpost /></Auth>} />
