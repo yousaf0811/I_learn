@@ -66,17 +66,17 @@ const Editpost = (prop) => {
     return (
         <div>
             <h3>Edit_Post</h3>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark">
                 <div class="container">
                     <div class="collapse navbar-collapse" id="navbarButtonsExample">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
+                            <li class="nav-item bg-light">
                                 <a class="nav-link" href="/">Home</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item bg-light">
                                 <a class="nav-link" href="#">About</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item bg-light">
                                 <a class="nav-link" href="#">Contact Us</a>
                             </li>
                         </ul>
@@ -86,57 +86,59 @@ const Editpost = (prop) => {
                     </div>
                 </div>
             </nav>
-            <div className="dashboard">
-                <div style={{ paddingTop: 50 }}><button type="button" class="btn btn-dark btn-lg px-2" onClick={() => { navigate('/teacheredit') }}>Edit Account</button></div>
-                <div style={{ paddingTop: 50 }}><button type="button" class="btn btn-dark btn-lg px-2 " onClick={() => { navigate('/Createpost') }}>Create Post</button></div>
-                <div style={{ paddingTop: 50 }}><button type="button" class="btn btn-dark btn-lg px-3 " onClick={() => { navigate('/viewpost') }}>View Post</button></div>
-            </div>
-            <div class="container-2">
-
-                <form name="blog_post" className="form-horizontal">
-                    <div className="username">
-                        <label className="form__label">Name</label>
-                        <input
-                            className="form-control"
-                            value={name}
-                            type="text"
-                            id="name"
-                            name="name"
-                            onChange={(e) => setName(e.target.value)}
-                            placeholder="Name"
-                        />
-                    </div>
-
-                    <div className="Title">
-                        <label className="form__label">Title</label>
-                        <input
-                            className="form-control"
-                            value={title}
-                            type="text"
-                            id="text"
-                            onChange={(e) => setTitle(e.target.value)}
-                            placeholder="Title"
-                        />
-                    </div>
-                    <div className="username">
-                        <label className="form__label">Body</label>
-                        <input
-                            value={body}
-                            className="form-control"
-                            type="text"
-                            id="name"
-                            onChange={(e) => setBody(e.target.value)}
-                            placeholder="Body"
-                        />
-                    </div>
-                    <div className="form-group">
-                        <div className="col-sm-4"></div>
-                        <div className="col-sm-12">
-                            <button type="button" class="btn btn-warning btn-lg"
-                                data-mdb-ripple-color="dark" onClick={() => handleEditSubmit()} >Save</button>
+            <div className="parent">
+                <div className="child-1">
+                    <div style={{ paddingTop: 50 }}><button type="button" class="btn btn-dark btn-lg px-2" onClick={() => { navigate('/teacheredit') }}>Edit Account</button></div>
+                    <div style={{ paddingTop: 50 }}><button type="button" class="btn btn-dark btn-lg px-2 " onClick={() => { navigate('/Createpost') }}>Create Post</button></div>
+                    <div style={{ paddingTop: 50 }}><button type="button" class="btn btn-dark btn-lg px-3 " onClick={() => { navigate('/viewpost') }}>View Post</button></div>
+                </div>
+                <div class="child-2">
+                    <form name="blog_post" className="form-horizontal">
+                        <div className="username">
+                            <label className="form__label">Name</label>
+                            <input
+                                className="form-control"
+                                value={name}
+                                type="text"
+                                id="name"
+                                name="name"
+                                onChange={(e) => setName(e.target.value)}
+                                placeholder="Name"
+                            />
                         </div>
-                    </div>
-                </form>
+
+                        <div className="Title">
+                            <label className="form__label">Title</label>
+                            <input
+                                className="form-control"
+                                value={title}
+                                type="text"
+                                id="text"
+                                onChange={(e) => setTitle(e.target.value)}
+                                placeholder="Title"
+                            />
+                        </div>
+                        <div className="Body">
+                            <label className="form__label">Body</label>
+                            <input
+                                value={body}
+                                className="form-control"
+                                type="text"
+                                id="name"
+                                onChange={(e) => setBody(e.target.value)}
+                                placeholder="Body"
+                            />
+                        </div>
+                        <div className="form-group">
+                            <div className="col-sm-4"></div>
+                            <div className="col-sm-12">
+                                <button type="button" class="btn btn-warning btn-lg"
+                                    data-mdb-ripple-color="dark" onClick={() => handleEditSubmit()} >Save</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
             </div>
         </div>
 

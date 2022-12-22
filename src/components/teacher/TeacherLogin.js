@@ -103,9 +103,9 @@ const TeacherLogin = () => {
 
                                                 <form onSubmit={handleSubmit} >
 
-                                                    <div class="d-flex align-items-center mb-3 pb-1">
+                                                    <div class="dfw-normal mb-3 pb-3">
                                                         <i class="fas fa-cubes fa-2x me-3" style={{ color: "#ff6219" }}></i>
-                                                        <span class="h1 fw-bold mb-0">TeacherLogin</span>
+                                                        <span class="h1 fw-bold mb-0">Teacher-Login</span>
                                                     </div>
 
                                                     <h5 class="fw-normal mb-3 pb-3" style={{ letterSpacing: "1px" }}>Sign into your account</h5>
@@ -121,10 +121,10 @@ const TeacherLogin = () => {
                                                     </div>
 
                                                     <div class="pt-1 mb-4">
-                                                        <button class="btn btn-success btn-lg btn-block" type="submit">Login</button>
+                                                        <button class="btn btn-success btn-lg btn-block" type="submit">Log in</button>
                                                     </div>
 
-                                                    <a class="small text-muted" href="#!">Forgot password?</a>
+                                                    
                                                     <p class="mb-5 pb-lg-2" style={{ color: "#393f81" }}>Don't have an account? <a href="/teachersignup"
                                                         style={{ color: "#393f81" }}>Register here</a></p>
                                                     <a href="#!" class="small text-muted">Terms of use.</a>

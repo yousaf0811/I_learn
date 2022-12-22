@@ -36,6 +36,26 @@
       "email": "100@gmail.com",
       "id": 2,
       "adress": "5"
+    },
+    {
+      "title": null,
+      "firstName": "wasif",
+      "lastName": "Mahmood",
+      "fatherName": "Mahood-UL-Hassan",
+      "gender": "Male",
+      "experience": null,
+      "aboutExperience": "I have experience for teaching",
+      "details": "empty",
+      "password": "123",
+      "additionalInformation": "60",
+      "country": "Pakistan",
+      "city": "Lahore",
+      "skypeId": "123",
+      "dob": "2022-12-22",
+      "number": "0301-3963678",
+      "address": "H no E 307 St No 2 Nadirabad Badian Road Lahore",
+      "email": "mateenzain2022@gmail.com",
+      "id": 3
     }
   ],
   "admin": [

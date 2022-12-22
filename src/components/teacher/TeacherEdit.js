@@ -19,7 +19,7 @@ const TeacherEdit = () => {
     const [skypeId, setSkypeId] = useState(null);
     const [dob, setDob] = useState(null);
     const [number, setNumber] = useState(null);
-    
+
 
     const handleInputChange = (e) => {
         const { id, value } = e.target;
@@ -137,7 +137,7 @@ const TeacherEdit = () => {
     return (
         <div>
             <h3>Edit-Account</h3>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark">
                 <div class="container">
                     <button
                         class="navbar-toggler"
@@ -151,17 +151,17 @@ const TeacherEdit = () => {
                         <i class="fas fa-bars"></i>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarButtonsExample">
-                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item bg-light">
                                 <a class="nav-link" href="#">Home</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item bg-light">
                                 <a class="nav-link" href="#">About</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item bg-light">
                                 <a class="nav-link" href="#">Contact Us</a>
                             </li>
-                        </ul> 
+                        </ul>
                         <div class="d-flex align-items-center">
                             <button type="button" class="btn btn-danger" onClick={() => { navigate('/') }}>Log Out</button>
                         </div>
@@ -318,7 +318,6 @@ const TeacherEdit = () => {
                                                     <button type="button" class="btn btn-warning px-3 me-2" onClick={() => { handleEditSubmit() }} >
                                                         save
                                                     </button>
-
                                                 </div>
                                             </div>
                                         </div>

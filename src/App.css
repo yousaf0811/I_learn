@@ -181,11 +181,7 @@
   background-color: lightgray;
   border-radius: 10px;
 }
-.dashboard{
-  height: 800px;
-  width: 300px;
-  background-color: #61dafb;
-}
+
 .btn-space {
   margin-right: 5px;
 }
@@ -197,8 +193,29 @@
   margin-left: 1000px; 
   
 }  */
-.h3 {
-  background-color: yellowgreen;
+.parent {
+  border: 1px solid black;
+  margin: 1rem;
+  padding: 2rem 2rem;
+  text-align: center;
 }
+.child-2 {
+  display: inline-block;
+  border: 1px solid brown;
+  padding: 3rem 3rem;
+  margin: 1rem;
+  text-align: center;
+  margin-left: 20px;
+  clear: both;
+  
+}
+.child-1{
+  height: 400px;
+  width: 200px;
+  background-color: #61dafb;
+  float: left;
+  
+}
+
 
 

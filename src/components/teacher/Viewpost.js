@@ -32,8 +32,7 @@ const Viewpost = () => {
     return (
         <div>
             <h3>View-Post</h3>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark">
                 <div class="container">
                     <button
                         class="navbar-toggler"
@@ -48,13 +47,13 @@ const Viewpost = () => {
                     </button>
                     <div class="collapse navbar-collapse" id="navbarButtonsExample">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
+                            <li class="nav-item bg-light">
                                 <a class="nav-link" href="/">Home</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item bg-light">
                                 <a class="nav-link" href="#">About</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item bg-light">
                                 <a class="nav-link" href="#">Contact Us</a>
                             </li>
                         </ul>
@@ -67,48 +66,50 @@ const Viewpost = () => {
                     </div>
                 </div>
             </nav>
-            <div className="dashboard">
-                <div style={{ paddingTop: 50 }}><button type="button" class="btn btn-dark btn-lg px-2" onClick={() => { navigate('/teacheredit') }}>Edit Account</button></div>
-                <div style={{ paddingTop: 50 }}><button type="button" class="btn btn-dark btn-lg px-2 " onClick={() => { navigate('/Createpost') }}>Create Post</button></div>
-                <div style={{ paddingTop: 50 }}><button type="button" class="btn btn-dark btn-lg px-3 " onClick={() => { navigate('/viewpost') }}>View Post</button></div>
-            </div>
-            <div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap' }}>
-                {usersList.map((items) => (
-                    <div class="card" style={{ width: 300, padding: 10, margin: 20, }}>
-                        {/* <img class="card-img-top" src="https://unsplash.com/photos/_RBcxo9AU-U" alt="Card image cap" /> */}
-                        <div class="card-body">
-                            <ul>
-                                <li><h5>ID</h5>{items.id}</li>
-                                <li><h5>Name</h5>{items.name}</li>
-                                <li><h5>Title</h5>{items.title}</li>
-                                <li><h5>Body</h5>{items.body}</li>
-                            </ul>
-                            <div style={{ justifyContent: 'space-between', width: '100%', }}>
-                                <button type="button" class="btn btn-success me-2" onClick={() => {
-                                    navigate({
-                                        pathname: '/Editpost',
-                                        search: createSearchParams({
-                                            postId: items.id
-                                        }).toString()
-                                    })
-                                }} >
-                                    Edit
-                                </button>
-                                <button
-                                    type="button"
-                                    class="btn btn-success  me-2"
-                                    onClick={() => {
-                                        alert("Are you sure you want to delete this post");
-                                    }}
-                                >
-                                    Delete
-                                </button>
+            <div className="parent">
+                <div className="child-1">
+                    <div style={{ paddingTop: 50 }}><button type="button" class="btn btn-dark btn-lg px-2" onClick={() => { navigate('/teacheredit') }}>Edit Account</button></div>
+                    <div style={{ paddingTop: 50 }}><button type="button" class="btn btn-dark btn-lg px-2 " onClick={() => { navigate('/Createpost') }}>Create Post</button></div>
+                    <div style={{ paddingTop: 50 }}><button type="button" class="btn btn-dark btn-lg px-3 " onClick={() => { navigate('/viewpost') }}>View Post</button></div>
+                </div>
+                <div classname="child-2" style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap' }}>
+                    {usersList.map((items) => (
+                        <div class="card" style={{ width: 300, padding: 10, margin: 20, }}>
+                            
+                            <div class="card-body">
+                                <ul>
+                                    <li>{items.id}</li>
+                                    <li>{items.name}</li>
+                                    <li>{items.title}</li>
+                                    <li>{items.body}</li>
+                                </ul>
+                                <div style={{ justifyContent: 'space-between', width: '100%', }}>
+                                    <button type="button" class="btn btn-success me-2" onClick={() => {
+                                        navigate({
+                                            pathname: '/Editpost',
+                                            search: createSearchParams({
+                                                postId: items.id
+                                            }).toString()
+                                        })
+                                    }} >
+                                        Edit
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn btn-success  me-2"
+                                        onClick={() => {
+                                            alert("Are you sure you want to delete this post");
+                                        }}
+                                    >
+                                        Delete
+                                    </button>
+
+                                </div>
 
                             </div>
-
                         </div>
-                    </div>
-                ))}
+                    ))}
+                </div>
             </div>
         </div>
     );

@@ -19,7 +19,6 @@ const TeacherSignup = () => {
     const [skypeId, setSkypeId] = useState(null);
     const [dob, setDob] = useState(null);
     const [number, setNumber] = useState(null);
-    // const [course, setCourse] = useState(null);
     const [email, setEmail] = useState(null);
 
     const handleInputChange = (e) => {
@@ -62,10 +61,10 @@ const TeacherSignup = () => {
         }
         if(id === "gender"){
             setGender(value);
-
+        }
         if(id === "skypeId"){
             setSkypeId(value);
-        }        }
+        }        
         if(id === "dob"){
             setDob(value);
         }
