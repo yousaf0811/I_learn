@@ -132,7 +132,7 @@ const TeacherEdit = () => {
 
 
     const handleClick = () => {
-        navigate('/Createpost')
+        navigate('/teacheraccount')
     };
     return (
         <div>
@@ -156,10 +156,10 @@ const TeacherEdit = () => {
                                 <a class="nav-link" href="#">Home</a>
                             </li>
                             <li class="nav-item bg-light">
-                                <a class="nav-link" href="#">About</a>
+                                <a class="nav-link" href="/footer#">About</a>
                             </li>
                             <li class="nav-item bg-light">
-                                <a class="nav-link" href="#">Contact Us</a>
+                                <a class="nav-link" href="/footer">Contact Us</a>
                             </li>
                         </ul>
                         <div class="d-flex align-items-center">

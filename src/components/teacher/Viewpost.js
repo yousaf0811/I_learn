@@ -75,7 +75,6 @@ const Viewpost = () => {
                 <div classname="child-2" style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap' }}>
                     {usersList.map((items) => (
                         <div class="card" style={{ width: 300, padding: 10, margin: 20, }}>
-                            
                             <div class="card-body">
                                 <ul>
                                     <li>{items.id}</li>

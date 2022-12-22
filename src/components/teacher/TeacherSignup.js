@@ -25,63 +25,64 @@ const TeacherSignup = () => {
         const { id, value } = e.target;
         if (id === "title") {
             setTitle(value);
-          }
+        }
         if (id === "firstName") {
-          setFirstName(value);
+            setFirstName(value);
         }
         if (id === "lastName") {
             setLastName(value);
-          }
-        if (id === "fatherName") {
-          setFatherName(value);
         }
-        if(id === "experience"){
+        if (id === "fatherName") {
+            setFatherName(value);
+        }
+        if (id === "experience") {
             setExperience(value);
         }
-        if(id === "boutExperience"){
+        if (id === "boutExperience") {
             setAboutExperience(value);
         }
-        if(id === "details"){
+        if (id === "details") {
             setDetails(value);
         }
-        if(id === "password"){
+        if (id === "password") {
             setPassword(value);
         }
-        if(id === "address"){
+        if (id === "address") {
             setAddress(value);
         }
-        if(id === "additionalInformation"){
+        if (id === "additionalInformation") {
             setAdditionalInformation(value);
         }
-        if(id === "country"){
+        if (id === "country") {
             setCountry(value);
         }
-        if(id === "city"){
+        if (id === "city") {
             setCity(value);
         }
-        if(id === "gender"){
+        if (id === "gender") {
             setGender(value);
         }
-        if(id === "skypeId"){
+        if (id === "skypeId") {
             setSkypeId(value);
-        }        
-        if(id === "dob"){
+        }
+        if (id === "dob") {
             setDob(value);
         }
-         if(id === "number"){
-             setNumber(value);
-         }
-        if(id === "email"){
+        if (id === "number") {
+            setNumber(value);
+        }
+        if (id === "email") {
             setEmail(value);
-        }    
+        }
     };
 
 
     const handleClick = () => {
-        navigate('/teacherlogin')};
-      const handleSubmit = () => {
+        navigate('/teacherlogin')
+    };
+    const handleSubmit = () => {
         // console.log(name);
-        if(!firstName ) { alert('Fill the empty input fields');  return false}; 
+        if (!firstName) { alert('Fill the empty input fields'); return false };
         const user = {
             title,
             firstName,
@@ -101,18 +102,18 @@ const TeacherSignup = () => {
             address,
             email,
         }
-    localStorage.setItem('name', JSON.stringify(user.name));
-        fetch('http://localhost:3010/teachers',{
-            method : "POST",
-            headers : {
-                "Content-Type" : "application/json"
+        localStorage.setItem('name', JSON.stringify(user.name));
+        fetch('http://localhost:3010/teachers', {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
             },
-            body : JSON.stringify(user)
-        }).then(resp => resp.json()).then(info => handleClick() );
-      };
+            body: JSON.stringify(user)
+        }).then(resp => resp.json()).then(info => handleClick());
+    };
     return (
         <div>
-                        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container">
                     <a class="navbar-brand me-2" href="#">
                         <img
@@ -120,7 +121,7 @@ const TeacherSignup = () => {
                             height="16"
                             alt="MDB Logo"
                             loading="lazy"
-                            style={{marginTop: "-1px"}}
+                            style={{ marginTop: "-1px" }}
                         />
                     </a>
                     <button
@@ -146,7 +147,7 @@ const TeacherSignup = () => {
                                 <a class="nav-link" href="#">Contact Us</a>
                             </li>
                         </ul>
-                        
+
                         <div class="d-flex align-items-center">
                             <button type="button" class="btn btn-success me-3" onClick={() => { navigate('/teacherlogin') }} >
                                 Already has Account ? Click for Login
@@ -156,19 +157,19 @@ const TeacherSignup = () => {
                 </div>
             </nav>
             <div className="teacher-signup-body" >
-            <section class="h-100 h-custom gradient-custom-2">
-                <div class="container py-5 h-100">
-                    <div class="row d-flex justify-content-center align-items-center h-100">
-                        <div class="col-12">
-                            <div class="card card-registration card-registration-2" style={{borderRadius: "15px"}}  >
-                                <div class="card-body p-0">
-                                    <div class="row g-0">
-                                        <div class="col-lg-6">
-                                            <div class="p-5">
-                                                <h3 class="fw-normal mb-5" style={{color: "#4835d4"}}  >General Infomation</h3>
+                <section class="h-100 h-custom gradient-custom-2">
+                    <div class="container py-5 h-100">
+                        <div class="row d-flex justify-content-center align-items-center h-100">
+                            <div class="col-12">
+                                <div class="card card-registration card-registration-2" style={{ borderRadius: "15px" }}  >
+                                    <div class="card-body p-0">
+                                        <div class="row g-0">
+                                            <div class="col-lg-6">
+                                                <div class="p-5">
+                                                    <h3 class="fw-normal mb-5" style={{ color: "#4835d4" }}  >General Infomation</h3>
 
-                                                <div class="mb-4 pb-2">
-                                                        <select value={title} class="select" onChange={(e)=>{
+                                                    <div class="mb-4 pb-2">
+                                                        <select value={title} class="select" onChange={(e) => {
                                                             console.log(e.target.value)
                                                             setTitle(e.target.value)
                                                         }}   >
@@ -178,152 +179,157 @@ const TeacherSignup = () => {
                                                         </select>
                                                     </div>
 
-                                                <div class="row">
-                                                    <div class="col-md-6 mb-4 pb-2">
+                                                    <div class="row">
+                                                        <div class="col-md-6 mb-4 pb-2">
 
-                                                        <div class="form-outline">
-                                                            <input onChange={(e) => handleInputChange(e)} type="text" id="firstName" class="form-control form-control-lg" />
-                                                            <label class="form-label" for="firstName">First name</label>
+                                                            <div class="form-outline">
+                                                                <input value={firstName} onChange={(e) => handleInputChange(e)} type="text" id="firstName" class="form-control form-control-lg" />
+                                                                <label class="form-label" for="firstName">First name</label>
+                                                            </div>
+
                                                         </div>
+                                                        <div class="col-md-6 mb-4 pb-2">
 
-                                                    </div>
-                                                    <div class="col-md-6 mb-4 pb-2">
+                                                            <div class="form-outline">
+                                                                <input value={lastName} onChange={(e) => handleInputChange(e)} type="text" id="lastName" class="form-control form-control-lg" />
+                                                                <label class="form-label" for="lastName">Last name</label>
+                                                            </div>
 
-                                                        <div class="form-outline">
-                                                            <input onChange={(e) => handleInputChange(e)} type="text" id="lastName" class="form-control form-control-lg" />
-                                                            <label class="form-label" for="lastName">Last name</label>
                                                         </div>
+                                                    </div>
+                                                    <div class="mb-4 pb-2">
+                                                        <div class="form-outline">
+                                                            <input value={fatherName} onChange={(e) => handleInputChange(e)} type="text" id="fatherName" class="form-control form-control-lg" />
+                                                            <label class="form-label" for="fatherName">Father Name</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-4 pb-2">
+                                                        <div class="form-outline">
+                                                            <input value={gender} onChange={(e) => handleInputChange(e)} type="text" id="gender" class="form-control form-control-lg" />
+                                                            <label class="form-label" for="gender">Gender</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-4 pb-2">
+                                                        <div class="form-outline">
+                                                            <select value={experience} class="select" onChange={(e) => {
+                                                                console.log(e.target.value)
+                                                                setExperience(e.target.value)
+                                                            }}
+                                                            >
+                                                                <option value="Six months">Six months</option>
+                                                                <option value="Six Months Plus">Six Months Plus</option>
+                                                                <option value="One Year">One Year</option>
+                                                                <option value="One Year Plus">One Year Plus</option>
+                                                                <option value="Two Year">Two Year</option>
+                                                                <option value="Two Year Plus">Two Year Plus</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
 
+                                                    <div class="mb-4 pb-2">
+                                                        <div class="form-outline">
+                                                            <input value={aboutExperience} onChange={(e) => handleInputChange(e)} type="text" id="boutExperience" class="form-control form-control-lg" />
+                                                            <label class="form-label" for="boutExperience">Details About Experience</label>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div class="mb-4 pb-2">
-                                                    <div class="form-outline">
-                                                        <input onChange={(e) => handleInputChange(e)} type="text" id="fatherName" class="form-control form-control-lg" />
-                                                        <label class="form-label" for="fatherName">Father Name</label>
+                                                    <div class="mb-4 pb-2">
+                                                        <div class="form-outline">
+                                                            <input value={details} onChange={(e) => handleInputChange(e)} type="text" id="details" class="form-control form-control-lg" />
+                                                            <label class="form-label" for="details">Any Other Details</label>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div class="mb-4 pb-2">
-                                                    <div class="form-outline">
-                                                        <input onChange={(e) => handleInputChange(e)} type="text" id="gender" class="form-control form-control-lg" />
-                                                        <label class="form-label" for="gender">Gender</label>
+                                                    <div class="mb-4 pb-2">
+                                                        <div class="form-outline">
+                                                            <input value={password} onChange={(e) => handleInputChange(e)} type="text" id="password" class="form-control form-control-lg" />
+                                                            <label class="form-label" for="password">Password</label>
+                                                        </div>
                                                     </div>
+                                                    <button type="button" class="btn btn-outline-success btn-lg m-3"
+                                                        data-mdb-ripple-color="dark" onClick={() => { navigate('/teacherlogin') }} >Already has Account ? Click for Login</button>
                                                 </div>
-
-                                                <div class="mb-4 pb-2">
-                                                    <select class="select">
-                                                        <option value="1">Experience</option>
-                                                        <option value="2">Six months</option>
-                                                        <option value="3">Six Months Plus</option>
-                                                        <option value="4">One Year</option>
-                                                        <option value="5">One Year Plus</option>
-                                                        <option value="6">Two Year</option>
-                                                        <option value="7">Two Year Plus</option>
-                                                    </select>
-                                                </div>
-
-                                                <div class="mb-4 pb-2">
-                                                    <div class="form-outline">
-                                                        <input onChange={(e) => handleInputChange(e)} type="text" id="boutExperience" class="form-control form-control-lg" />
-                                                        <label class="form-label" for="boutExperience">Details About Experience</label>
-                                                    </div>
-                                                </div>
-                                                <div class="mb-4 pb-2">
-                                                    <div class="form-outline">
-                                                        <input onChange={(e) => handleInputChange(e)} type="text" id="details" class="form-control form-control-lg" />
-                                                        <label class="form-label" for="details">Any Other Details</label>
-                                                    </div>
-                                                </div>
-                                                <div class="mb-4 pb-2">
-                                                    <div class="form-outline">
-                                                        <input onChange={(e) => handleInputChange(e)} type="text" id="password" class="form-control form-control-lg" />
-                                                        <label class="form-label" for="password">Password</label>
-                                                    </div>
-                                                </div>
-                                                <button type="button" class="btn btn-outline-success btn-lg m-3"
-                                                    data-mdb-ripple-color="dark" onClick={()=>{navigate('/teacherlogin')}} >Already has Account ? Click for Login</button>    
                                             </div>
-                                        </div>
-                                        <div class="col-lg-6 bg-indigo text-white">
-                                            <div class="p-5">
-                                                <h3 class="fw-normal mb-5">Contact Details</h3>
+                                            <div class="col-lg-6 bg-indigo text-white">
+                                                <div class="p-5">
+                                                    <h3 class="fw-normal mb-5">Contact Details</h3>
 
-                                                <div class="mb-4 pb-2">
-                                                    <div class="form-outline form-white">
-                                                        <input onChange={(e) => handleInputChange(e)} type="text" id="address" class="form-control form-control-lg" />
-                                                        <label class="form-label" for="address">Address</label>
-                                                    </div>
-                                                </div>
-
-                                                <div class="mb-4 pb-2">
-                                                    <div class="form-outline form-white">
-                                                        <input onChange={(e) => handleInputChange(e)} type="text" id="additionalInformation" class="form-control form-control-lg" />
-                                                        <label class="form-label" for="additionalInformation">Additional Information</label>
-                                                    </div>
-                                                </div>
-
-                                                <div class="row">
-                                                    <div class="col-md-5 mb-4 pb-2">
-
+                                                    <div class="mb-4 pb-2">
                                                         <div class="form-outline form-white">
-                                                            <input onChange={(e) => handleInputChange(e)} type="text" id="country" class="form-control form-control-lg" />
-                                                            <label class="form-label" for="country">State/Country</label>
+                                                            <input value={address} onChange={(e) => handleInputChange(e)} type="text" id="address" class="form-control form-control-lg" />
+                                                            <label class="form-label" for="address">Address</label>
                                                         </div>
-
                                                     </div>
-                                                    <div class="col-md-7 mb-4 pb-2">
 
+                                                    <div class="mb-4 pb-2">
                                                         <div class="form-outline form-white">
-                                                            <input onChange={(e) => handleInputChange(e)} type="text" id="city" class="form-control form-control-lg" />
-                                                            <label class="form-label" for="city">City</label>
+                                                            <input value={additionalInformation} onChange={(e) => handleInputChange(e)} type="text" id="additionalInformation" class="form-control form-control-lg" />
+                                                            <label class="form-label" for="additionalInformation">Additional Information</label>
                                                         </div>
-
                                                     </div>
-                                                </div>
 
-                                                <div class="mb-4 pb-2">
-                                                    <div class="form-outline form-white">
-                                                        <input onChange={(e) => handleInputChange(e)} type="text" id="skypeId" class="form-control form-control-lg" />
-                                                        <label class="form-label" for="skypeId">Skype ID</label>
+                                                    <div class="row">
+                                                        <div class="col-md-5 mb-4 pb-2">
+
+                                                            <div class="form-outline form-white">
+                                                                <input value={country} onChange={(e) => handleInputChange(e)} type="text" id="country" class="form-control form-control-lg" />
+                                                                <label class="form-label" for="country">State/Country</label>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="col-md-7 mb-4 pb-2">
+
+                                                            <div class="form-outline form-white">
+                                                                <input value={city} onChange={(e) => handleInputChange(e)} type="text" id="city" class="form-control form-control-lg" />
+                                                                <label class="form-label" for="city">City</label>
+                                                            </div>
+
+                                                        </div>
                                                     </div>
-                                                </div>
 
-                                                <div class="row">
-                                                    <div class="col-md-5 mb-4 pb-2">
-
+                                                    <div class="mb-4 pb-2">
                                                         <div class="form-outline form-white">
-                                                            <input onChange={(e) => handleInputChange(e)} type="date" id="dob" class="form-control form-control-lg" />
-                                                            <label class="form-label" for="dob">DOB</label>
+                                                            <input value={skypeId} onChange={(e) => handleInputChange(e)} type="text" id="skypeId" class="form-control form-control-lg" />
+                                                            <label class="form-label" for="skypeId">Skype ID</label>
                                                         </div>
-
                                                     </div>
-                                                    <div class="col-md-7 mb-4 pb-2">
 
+                                                    <div class="row">
+                                                        <div class="col-md-5 mb-4 pb-2">
+
+                                                            <div class="form-outline form-white">
+                                                                <input value={dob} onChange={(e) => handleInputChange(e)} type="date" id="dob" class="form-control form-control-lg" />
+                                                                <label class="form-label" for="dob">DOB</label>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="col-md-7 mb-4 pb-2">
+
+                                                            <div class="form-outline form-white">
+                                                                <input value={number} onChange={(e) => handleInputChange(e)} type="text" id="number" class="form-control form-control-lg" />
+                                                                <label class="form-label" for="number">Phone Number</label>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="mb-4">
                                                         <div class="form-outline form-white">
-                                                            <input onChange={(e) => handleInputChange(e)} type="text" id="number" class="form-control form-control-lg" />
-                                                            <label class="form-label" for="number">Phone Number</label>
+                                                            <input value={email} onChange={(e) => handleInputChange(e)} type="text" id="email" class="form-control form-control-lg" />
+                                                            <label class="form-label" for="email">Your Email</label>
                                                         </div>
-
                                                     </div>
-                                                </div>
 
-                                                <div class="mb-4">
-                                                    <div class="form-outline form-white">
-                                                        <input onChange={(e) => handleInputChange(e)} type="text" id="email" class="form-control form-control-lg" />
-                                                        <label class="form-label" for="email">Your Email</label>
+                                                    <div class="form-check d-flex justify-content-start mb-4 pb-3">
+                                                        <input onChange={(e) => handleInputChange(e)} class="form-check-input me-3" type="checkbox" value="" id="form2Example3c" />
+                                                        <label class="form-check-label text-white" for="form2Example3">
+                                                            I do accept the <a href="#!" class="text-white"><u>Terms and Conditions</u></a> of your
+                                                            site.
+                                                        </label>
                                                     </div>
+
+                                                    <button type="button" class="btn btn-success btn-lg"
+                                                        data-mdb-ripple-color="dark" onClick={() => handleSubmit()} >Register</button>
+
                                                 </div>
-
-                                                <div class="form-check d-flex justify-content-start mb-4 pb-3">
-                                                    <input onChange={(e) => handleInputChange(e)} class="form-check-input me-3" type="checkbox" value="" id="form2Example3c" />
-                                                    <label class="form-check-label text-white" for="form2Example3">
-                                                        I do accept the <a href="#!" class="text-white"><u>Terms and Conditions</u></a> of your
-                                                        site.
-                                                    </label>
-                                                </div>
-
-                                                <button type="button" class="btn btn-success btn-lg"
-                                                    data-mdb-ripple-color="dark" onClick={() => handleSubmit()} >Register</button>
-
                                             </div>
                                         </div>
                                     </div>
@@ -331,8 +337,7 @@ const TeacherSignup = () => {
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
             </div>
 
             <div className="footer" >
@@ -360,25 +365,25 @@ const TeacherSignup = () => {
                         <div className="middle-item" >
                             <div><h3>ABOUT US</h3></div>
                             <div><p>
-                            For learning and reciting the Holy Quran, we provide the best services for you. Allah creates us with great blessings upon us because we are Muslim. It’s possible due to the online Quran academy to recite and learn the Holy Quran with Tajweed. </p></div>
+                                For learning and reciting the Holy Quran, we provide the best services for you. Allah creates us with great blessings upon us because we are Muslim. It’s possible due to the online Quran academy to recite and learn the Holy Quran with Tajweed. </p></div>
                         </div>
                         <div className="middle-item" >
-                           <div><h3>CONTACT US</h3></div>
-                           <div>
-                            <ul>+92-31234567</ul>
-                            <ul>ELernIslamic@gmail.com</ul>
-                            <ul>E Learn Islamic Education</ul>
-                            <ul>Green Town,Lahore, Pakistan</ul>
-                           </div>
+                            <div><h3>CONTACT US</h3></div>
+                            <div>
+                                <ul>+92-31234567</ul>
+                                <ul>ELernIslamic@gmail.com</ul>
+                                <ul>E Learn Islamic Education</ul>
+                                <ul>Green Town,Lahore, Pakistan</ul>
+                            </div>
                         </div>
                         <div className="middle-item" >
                             <div><h3>OUR SERVICE'S</h3></div>
                             <div>
-                                    <ul>ONLINE QURAN MEMORIZATION</ul>                            
-                                    <ul>ONLINE QURAN RECITATION</ul>
-                                    <ul>ONLINE TAFSEER COURSE</ul>
-                                    <ul>ONLINE QURAN READING</ul>
-                                    <ul>FEMALE QURAN TUTOR</ul>
+                                <ul>ONLINE QURAN MEMORIZATION</ul>
+                                <ul>ONLINE QURAN RECITATION</ul>
+                                <ul>ONLINE TAFSEER COURSE</ul>
+                                <ul>ONLINE QURAN READING</ul>
+                                <ul>FEMALE QURAN TUTOR</ul>
                             </div>
                         </div>
                         <div className="middle-item" >

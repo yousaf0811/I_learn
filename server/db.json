@@ -56,6 +56,46 @@
       "address": "H no E 307 St No 2 Nadirabad Badian Road Lahore",
       "email": "mateenzain2022@gmail.com",
       "id": 3
+    },
+    {
+      "title": "Molana sb",
+      "firstName": "1",
+      "lastName": "2",
+      "fatherName": "3",
+      "gender": "4",
+      "experience": "Two Year Plus",
+      "aboutExperience": "6",
+      "details": "7",
+      "password": "8",
+      "additionalInformation": "01",
+      "country": "02",
+      "city": "03",
+      "skypeId": "04",
+      "dob": "2022-12-05",
+      "number": "06",
+      "address": "9",
+      "email": "zain2022@gmail.com",
+      "id": 4
+    },
+    {
+      "title": "Islamic Teacher",
+      "firstName": "1",
+      "lastName": "2",
+      "fatherName": "3",
+      "gender": "4",
+      "experience": "Six Months Plus",
+      "aboutExperience": "5",
+      "details": "6",
+      "password": "7",
+      "additionalInformation": "9",
+      "country": "10",
+      "city": "11",
+      "skypeId": "12",
+      "dob": "2022-12-13",
+      "number": "14",
+      "address": "8",
+      "email": "wasif@gmail.com",
+      "id": 5
     }
   ],
   "admin": [
@@ -133,6 +173,66 @@
       "title": null,
       "details": null,
       "id": 10
+    },
+    {
+      "name": null,
+      "title": null,
+      "details": null,
+      "id": 11
+    },
+    {
+      "name": null,
+      "title": null,
+      "details": null,
+      "id": 12
+    },
+    {
+      "name": null,
+      "title": null,
+      "details": null,
+      "id": 13
+    },
+    {
+      "name": "creative solutions",
+      "title": "creative ",
+      "details": "solutions",
+      "id": 14
+    },
+    {
+      "name": null,
+      "title": null,
+      "details": null,
+      "id": 15
+    },
+    {
+      "name": null,
+      "title": null,
+      "details": null,
+      "id": 16
+    },
+    {
+      "name": null,
+      "title": null,
+      "details": null,
+      "id": 17
+    },
+    {
+      "name": null,
+      "title": null,
+      "details": null,
+      "id": 18
+    },
+    {
+      "name": null,
+      "title": null,
+      "details": null,
+      "id": 19
+    },
+    {
+      "name": null,
+      "title": null,
+      "details": null,
+      "id": 20
     }
   ]
 }
