@@ -53,7 +53,7 @@ const Navbar = () => {
                                 </li>
                             </ul>
                             <div class="d-flex align-items-center">
-                                <button type="button" class="btn btn-outline-secondary px-3 me-2"  >
+                                <button type="button" class="btn btn-outline-secondary px-3 me-2" onClick={() => { navigate('/studentlogin') }} >
                                     Login for Student
                                 </button>
                                 <button type="button" class="btn btn-outline-secondary px-3 me-2" onClick={() => { navigate('/teacherlogin') }} >
