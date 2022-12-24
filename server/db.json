@@ -52,7 +52,7 @@
       "state": "Pakistan",
       "city": "Uch Sharif",
       "course": "Quran Teacher",
-      "email": "yousaf@gmail.com",
+      "email": "yousaf1@gmail.com",
       "password": "asdf",
       "id": 6
     },
@@ -69,6 +69,20 @@
       "email": "rashid.4969423@gmail.com",
       "password": "12345",
       "id": 7
+    },
+    {
+      "firstName": "Faheem",
+      "lastName": "Ahmad",
+      "fatherName": "Muhammad Ramzan",
+      "address": "Basti Sharif",
+      "gender": "Male",
+      "dob": "2022-12-28",
+      "state": "Pakistan",
+      "city": "Uch Sharif",
+      "course": "Quran teaching",
+      "email": "Faheem@gmail.com",
+      "password": "faheem",
+      "id": 8
     }
   ],
   "teachers": [

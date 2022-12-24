@@ -1,7 +1,18 @@
+import SNavbar from "./studentnavbar";
+import { useParams } from "react-router-dom";
+import Footer from "../component/footer";
+import StudentDashboard from "./studentDashBoard";
+
+
 const StudentEdit = ()=>{
+    const options = [
+        {id: 1, title: "Nothing", value: ''}
+    ]
     return(
         <div>
-            <h1>Student_Edit</h1>
+            <SNavbar/>
+            <StudentDashboard/>
+            <Footer/>
         </div>
     )
 }
