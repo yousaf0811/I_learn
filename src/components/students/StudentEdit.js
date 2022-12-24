@@ -5,6 +5,9 @@ import StudentDashboard from "./studentDashBoard";
 
 
 const StudentEdit = ()=>{
+    const options = [
+        {id: 1, title: "Nothing", value: ''}
+    ]
     return(
         <div>
             <SNavbar/>

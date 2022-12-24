@@ -1,5 +1,5 @@
 import SNavbar from "./studentnavbar";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import Footer from "../component/footer";
 import { useEffect, useState } from "react";
 const StudentAccount = () => {
@@ -50,8 +50,7 @@ const StudentAccount = () => {
                             <h5 class="card-title">Course: {student.course}</h5>
                             <h5 class="card-title">Gender: {student.gender}</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#!" class="btn btn-warning">Edit Profile</a>
-                            {/* <button type="button" class="btn btn-warning">Warning</button> */}
+                            <Link to="/studentEdit" class="btn btn-warning">Edit Profile</Link>
                         </div>
                     </div>
 
