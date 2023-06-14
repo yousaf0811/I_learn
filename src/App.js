@@ -23,27 +23,27 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-      <Routes>
-      <Route path="/" element={<Home/> } />
-      {/* <Route path="*" element={<Home/> } /> */}
-      <Route path="/admin" element={<Admin/> } />
-      <Route path="/studentlogin" element={<StudentLogin/> } />
-      <Route path="/studentsignup" element={<StudentSignUp/> } />
-      <Route path="/studentaccount/:id" element={<Auth><StudentAccount/></Auth> } />
-      <Route path="/studentEdit" element={<Auth><StudentEdit/></Auth> } />
-      <Route path="/studentquery" element={<Auth><StudentQuery/></Auth> } />
-      <Route path="/studentposts" element={<Auth><StudentPosts/></Auth> } />
-      <Route path="/teacherlogin" element={<TeacherLogin/> } />
-      <Route path="/teachersignup" element={<TeacherSignup/> } />
-      <Route path="/teacherEdit" element={<TeacherEdit/> } />
-      <Route path="/teacherquery" element={<TeacherQuery/> } />
-      <Route path="/teacherAccount" element={<Auth><TeacherAccount/></Auth> } />
-      <Route path="/adminHome" element={<Auth><Admin_home/></Auth> } />
-      <Route path="/about" element={<About/> } />
-      <Route path="/contactus" element={<Contactus/> } />
-      <Route path="/fee" element={<Fee/> } />
-      <Route path="/courses" element={<Courses/> } />
-      </Routes>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          {/* <Route path="*" element={<Home/> } /> */}
+          <Route path="/admin" element={<Admin />} />
+          <Route path="/studentlogin" element={<StudentLogin />} />
+          <Route path="/studentsignup" element={<StudentSignUp />} />
+          <Route path="/studentaccount/:id" element={<Auth><StudentAccount /></Auth>} />
+          <Route path="/studentEdit" element={<Auth><StudentEdit /></Auth>} />
+          <Route path="/studentquery" element={<Auth><StudentQuery /></Auth>} />
+          <Route path="/studentposts" element={<Auth><StudentPosts /></Auth>} />
+          <Route path="/teacherlogin" element={<TeacherLogin />} />
+          <Route path="/teachersignup" element={<TeacherSignup />} />
+          <Route path="/teacherEdit" element={<TeacherEdit />} />
+          <Route path="/teacherquery" element={<TeacherQuery />} />
+          <Route path="/teacherAccount" element={<Auth><TeacherAccount /></Auth>} />
+          <Route path="/adminHome" element={<Auth><Admin_home /></Auth>} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contactus" element={<Contactus />} />
+          <Route path="/fee" element={<Fee />} />
+          <Route path="/courses" element={<Courses />} />
+        </Routes>
       </BrowserRouter>
     </div>
   );

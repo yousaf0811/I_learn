@@ -14,9 +14,7 @@ const Fee = () => {
                     <div className="fee-body-text" >
                         <h1>Online Quran Classes</h1>
                         <p>Online Quran Academy offers a variety of online Quran classes and learning options to meet the needs of its students. We have also designed special weekend courses for those who at working. Have a look at the study options and select the one you like the most!
-
                             At our Online Quran Institute, you will find an affordable Fee structure for the courses. If you cannot afford the courses, don’t worry! We also provide financial assistance to the deserving students.
-
                             We are verified from PayPal. However, you can also pay through Direct Bank Deposit, and various payment gateways.</p>
                         <button type="button" class="btn btn-warning" onClick={() => { navigate('/studentsignup') }} >Register Now</button>
                     </div>
@@ -54,91 +52,91 @@ const Fee = () => {
                     <div className="fee-plan-item" >
                         <div className="fee-days" >
                             <h4>2 Days Classes</h4>
-                                <h6>in a week</h6>
+                            <h6>in a week</h6>
                         </div>
                         <div className="fee-amount" >
                             <h1>35 $</h1>
                             <h6>Monthly</h6>
                         </div>
                         <div className="fee-details" >
-                           <h4><li>3 Days free trial</li></h4>
-                           <h4><li> Up to 20 Minutes</li></h4>
-                           <h4><li>8 Classes Per Month</li></h4>
-                           <h4><li>Monthly Test</li></h4>
-                           <h4><li>Admin Meeting</li></h4><br></br><br></br>
-                           <button type="button" class="btn btn-warning btn-lg " onClick={() => { navigate('/studentsignup') }} >Register Now</button>
+                            <h4><li>3 Days free trial</li></h4>
+                            <h4><li> Up to 20 Minutes</li></h4>
+                            <h4><li>8 Classes Per Month</li></h4>
+                            <h4><li>Monthly Test</li></h4>
+                            <h4><li>Admin Meeting</li></h4><br></br><br></br>
+                            <button type="button" class="btn btn-warning btn-lg " onClick={() => { navigate('/studentsignup') }} >Register Now</button>
                         </div>
                     </div>
                     <div className="fee-plan-item" >
-                    <div className="fee-days" >
+                        <div className="fee-days" >
                             <h4>2 Days Classes</h4>
-                                <h6>in a week</h6>
+                            <h6>in a week</h6>
                         </div>
                         <div className="fee-amount" >
                             <h1>35 $</h1>
                             <h6>Monthly</h6>
                         </div>
                         <div className="fee-details" >
-                           <h4><li>3 Days free trial</li></h4>
-                           <h4><li> Up to 20 Minutes</li></h4>
-                           <h4><li>8 Classes Per Month</li></h4>
-                           <h4><li>Monthly Test</li></h4>
-                           <h4><li>Admin Meeting</li></h4><br></br><br></br>
-                           <button type="button" class="btn btn-warning btn-lg " onClick={() => { navigate('/studentsignup') }} >Register Now</button>
+                            <h4><li>3 Days free trial</li></h4>
+                            <h4><li> Up to 20 Minutes</li></h4>
+                            <h4><li>8 Classes Per Month</li></h4>
+                            <h4><li>Monthly Test</li></h4>
+                            <h4><li>Admin Meeting</li></h4><br></br><br></br>
+                            <button type="button" class="btn btn-warning btn-lg " onClick={() => { navigate('/studentsignup') }} >Register Now</button>
                         </div>
                     </div>
                     <div className="fee-plan-item" >
-                    <div className="fee-days" >
+                        <div className="fee-days" >
                             <h4>2 Days Classes</h4>
-                                <h6>in a week</h6>
+                            <h6>in a week</h6>
                         </div>
                         <div className="fee-amount" >
                             <h1>35 $</h1>
                             <h6>Monthly</h6>
                         </div>
                         <div className="fee-details" >
-                           <h4><li>3 Days free trial</li></h4>
-                           <h4><li> Up to 20 Minutes</li></h4>
-                           <h4><li>8 Classes Per Month</li></h4>
-                           <h4><li>Monthly Test</li></h4>
-                           <h4><li>Admin Meeting</li></h4><br></br><br></br>
-                           <button type="button" class="btn btn-warning btn-lg " onClick={() => { navigate('/studentsignup') }} >Register Now</button>
+                            <h4><li>3 Days free trial</li></h4>
+                            <h4><li> Up to 20 Minutes</li></h4>
+                            <h4><li>8 Classes Per Month</li></h4>
+                            <h4><li>Monthly Test</li></h4>
+                            <h4><li>Admin Meeting</li></h4><br></br><br></br>
+                            <button type="button" class="btn btn-warning btn-lg " onClick={() => { navigate('/studentsignup') }} >Register Now</button>
                         </div>
                     </div>
                     <div className="fee-plan-item" >
-                    <div className="fee-days" >
+                        <div className="fee-days" >
                             <h4>2 Days Classes</h4>
-                                <h6>in a week</h6>
+                            <h6>in a week</h6>
                         </div>
                         <div className="fee-amount" >
                             <h1>35 $</h1>
                             <h6>Monthly</h6>
                         </div>
                         <div className="fee-details" >
-                           <h4><li>3 Days free trial</li></h4>
-                           <h4><li> Up to 20 Minutes</li></h4>
-                           <h4><li>8 Classes Per Month</li></h4>
-                           <h4><li>Monthly Test</li></h4>
-                           <h4><li>Admin Meeting</li></h4><br></br><br></br>
-                           <button type="button" class="btn btn-warning btn-lg " onClick={() => { navigate('/studentsignup') }} >Register Now</button>
+                            <h4><li>3 Days free trial</li></h4>
+                            <h4><li> Up to 20 Minutes</li></h4>
+                            <h4><li>8 Classes Per Month</li></h4>
+                            <h4><li>Monthly Test</li></h4>
+                            <h4><li>Admin Meeting</li></h4><br></br><br></br>
+                            <button type="button" class="btn btn-warning btn-lg " onClick={() => { navigate('/studentsignup') }} >Register Now</button>
                         </div>
                     </div>
                     <div className="fee-plan-item" >
-                    <div className="fee-days" >
+                        <div className="fee-days" >
                             <h4>2 Days Classes</h4>
-                                <h6>in a week</h6>
+                            <h6>in a week</h6>
                         </div>
                         <div className="fee-amount" >
                             <h1>35 $</h1>
                             <h6>Monthly</h6>
                         </div>
                         <div className="fee-details" >
-                           <h4><li>3 Days free trial</li></h4>
-                           <h4><li> Up to 20 Minutes</li></h4>
-                           <h4><li>8 Classes Per Month</li></h4>
-                           <h4><li>Monthly Test</li></h4>
-                           <h4><li>Admin Meeting</li></h4><br></br><br></br>
-                           <button type="button" class="btn btn-warning btn-lg " onClick={() => { navigate('/studentsignup') }} >Register Now</button>
+                            <h4><li>3 Days free trial</li></h4>
+                            <h4><li> Up to 20 Minutes</li></h4>
+                            <h4><li>8 Classes Per Month</li></h4>
+                            <h4><li>Monthly Test</li></h4>
+                            <h4><li>Admin Meeting</li></h4><br></br><br></br>
+                            <button type="button" class="btn btn-warning btn-lg " onClick={() => { navigate('/studentsignup') }} >Register Now</button>
                         </div>
                     </div>
                 </div>

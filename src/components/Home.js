@@ -3,6 +3,8 @@ import Navbar from "./component/navbar";
 import Footer from "./component/footer";
 // import body_photo from '../../assets/images/body_photo.jpg'
 import body_photo from '../assets/images/body_photo.jpg'
+import '../components/home.css'
+
 const Home = () => {
   const navigate = useNavigate();
   return (
@@ -16,13 +18,10 @@ const Home = () => {
       </div>
       <div className="home-body-text" >
         <div className="home-body-text-item">
-          <h2>Welcome to Online Quran Academy</h2>
+          <h5>Welcome to Online Quran Academy</h5>
           <p>Quran-Edu is an Online Quran academy. It started working in 2011. And aims to spread Quranic education around the world. The lack of Islamic educational institutes in online space has created a vacuum. It needs to be filled so that everyone can learn Islam and the Quran. We are bringing the light of the Holy Quran to online spaces.
-
             Our online Quran teachers are dedicated, qualified, hardworking, and experienced. We take special care of students’ needs. The online Quran academy offers flexible hours. Students can choose the best time possible out of their busy schedules. The institute has made videos of the lessons to help with the homework. The online Quran courses offered are easy and engaging.
-
             At our online Quran academy, we believe everyone, regardless of age, gender, or occupation, is entitled to learn the Holy Quran. In this message, we believe with all our hearts. In this, we want others to believe. So, join us and be one of us!
-
           </p>
         </div>
         <div className="home-body-text-item">

@@ -20,7 +20,7 @@ const Navbar = () => {
                             style={{ marginTop: "-1px", lineHeight:"120px" }}
                         />
                     </a>
-                    <h1>E-Learn Islamic Education</h1>
+                    <h3>E-Learn Islamic Education</h3>
                     <button
                         class="navbar-toggler"
                         type="button"
@@ -53,7 +53,7 @@ const Navbar = () => {
                                 </li>
                             </ul>
                             <div class="d-flex align-items-center">
-                                <button type="button" class="btn btn-outline-secondary px-3 me-2" onClick={() => { navigate('/studentlogin') }} >
+                                <button type="button" class="btn btn-outline-secondary   me-2" onClick={() => { navigate('/studentlogin') }} >
                                     Login for Student
                                 </button>
                                 <button type="button" class="btn btn-outline-secondary px-3 me-2" onClick={() => { navigate('/teacherlogin') }} >

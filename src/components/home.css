@@ -1,0 +1,12 @@
+.home-body-text{
+    height: 1006px;
+    background-color: #DDC577;
+    width: 100%;
+    border: #D1AD3C solid 5px;
+  }
+  .home-body-text-item{
+    /* height:400px; */
+    width: 100%;
+    padding: 50px;
+    border: #D1AD3C solid 5px;
+  }

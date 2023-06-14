@@ -18,8 +18,8 @@ const Contactus = () => {
                     </div>
                     <div className="contact-div-item" >
                         <h1>Contact Us</h1>
-                        <h4>Mobile: +923123456789</h4>
-                        <h4>Mobile: +923123456789</h4>
+                        <h4>Mobile: +92301-3963678</h4>
+                        <h4>Mobile: +92312-3456789</h4>
                     </div>
                     <div className="contact-div-item" >
                         <h1>E-mail</h1>

@@ -1,6 +1,7 @@
 import Navbar from "./navbar"
 import Footer from "./footer";
 import { useNavigate } from "react-router-dom"
+
 const About = () => {
     const navigate = useNavigate();
     return (
@@ -32,8 +33,8 @@ const About = () => {
             </div>
             <div className="about-body-item-step">
                 <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
-            <button type="button" class="btn btn-warning" onClick={() => { navigate('/studentsignup') }} >Register</button>
-                    
+                <button type="button" class="btn btn-warning" onClick={() => { navigate('/studentsignup') }} >Register</button>
+
             </div>
             <Footer />
         </div>
