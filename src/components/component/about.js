@@ -9,7 +9,6 @@ const About = () => {
             <Navbar />
             <div className="about-body" >
                 <div className="about-body-item">
-                    {/* <h1>Online Quran School</h1> */}
                     <h2>About Quran Education</h2>
                     <p>Quran-Edu is an Online Quran School operating from Pakistan. Aim of spreading the message of the Holy Quran. Quran-Edu wants to use the internet to help those brothers and sisters who are facing difficulties in getting education in a Mosque or a Madrasa. Now, you can get quality education for you and/or your kids in the warmth of your houses. Most of all, we focus on maintaining the quality of the traditional education.</p>
                     <button type="button" class="btn btn-warning" onClick={() => { navigate('/courses') }} >Check Our Courses</button>

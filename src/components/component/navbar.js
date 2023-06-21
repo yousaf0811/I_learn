@@ -9,7 +9,7 @@ const Navbar = () => {
 
         <div>
             <nav class="navbar navbar-expand-lg home-navbar  ">
-                <div class="container position-fixed ">
+                <div class="container position-fixed d-flex align-items-center">
                     <a class="navbar-brand me-2" href="/">
                         <img
                             src={Logo}
@@ -17,10 +17,10 @@ const Navbar = () => {
                             height={100}
                             alt="MDB Logo"
                             loading="lazy"
-                            style={{ marginTop: "-1px", lineHeight:"120px" }}
+                            style={{ marginTop: "-1px", lineHeight: "120px" }}
                         />
                     </a>
-                    <h3>E-Learn Islamic Education</h3>
+                    <h5 className="me-auto">E-Learn Islamic Education</h5>
                     <button
                         class="navbar-toggler"
                         type="button"
@@ -32,34 +32,39 @@ const Navbar = () => {
                     >
                         <i class="fas fa-bars"></i>
                     </button>
-                    <div className="nb-text" >
-                        <div class="collapse navbar-collapse" id="navbarButtonsExample">
-                            <div className="navbar-text-colour" ></div>
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="/">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="/about">About</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="/contactus">Contact Us</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="courses">Courses</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="fee">Fee Plan's</a>
-                                </li>
-                            </ul>
-                            <div class="d-flex align-items-center">
-                                <button type="button" class="btn btn-outline-secondary   me-2" onClick={() => { navigate('/studentlogin') }} >
-                                    Login for Student
-                                </button>
-                                <button type="button" class="btn btn-outline-secondary px-3 me-2" onClick={() => { navigate('/teacherlogin') }} >
-                                    Login for Teacher
-                                </button>
-                            </div>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarButtonsExample">
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link text-center" href="/">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-center" href="/about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-center" href="/contactus">Contact Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-center" href="courses">Courses</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-center" href="fee">Fee Plan's</a>
+                            </li>
+                        </ul>
+                        <div class="ms-auto">
+                            <button
+                                type="button"
+                                class="btn btn-outline-warning me-2"
+                                onClick={() => { navigate('/studentlogin') }}
+                            >
+                                Login for Student
+                            </button>
+                            <button
+                                type="button"
+                                class="btn btn-outline-warning"
+                                onClick={() => { navigate('/teacherlogin') }}
+                            >
+                                Login for Teacher
+                            </button>
                         </div>
                     </div>
                 </div>
